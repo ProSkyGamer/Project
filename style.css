@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+#wrapper{ /*добавлено чтобы отправить футтер в конец страницы, а контекст сам расширялся)*/
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#header{
+    background: darkred;
+    height: 100px;
+    color: white;
+    text-align: center;
+    line-height: 100px; /*центрирование текста по вертикали*/
+    text-transform: uppercase; /*выводим большими буквами*/
+    font-size: 3vw; /*резиновый текст относительно размера окна*/
+    flex: 0 0 auto;
+    ;
+}
+#menu{
+    background: lightgreen;
+    height: 50px;
+    flex: 0 0 auto;
+}
+#content{
+    background: oldlace;
+    text-align: -webkit-center; /*выравнивание по центру страницы (вместо <center>)*/
+    flex: 1 0 auto;
+}
+#footer{
+    background: darkred;
+    height: 50px;
+    flex: 0 0 auto;
+    color: lightpink;
+    text-align: center;
+}
+
+.bmenu{
+    float: left;
+    width: 50%;
+    height: 50px;
+    background: darkgreen;
+}
+.bmenu:hover{
+    background: red;
+}
+.bmenuactive{
+    float: left;
+    width: 50%;
+    height: 50px;
+    background: green;
+}
+.bmenuactive:hover{
+    background: red;
+}
+
+.myRef{
+    display: block;
+    height: 100%;
+    text-align: center;
+    line-height: 50px; /*центрирование текста по вертикали*/
+    color: white;
+    text-decoration: none; /*Отменяем подчеркивание у ссылки*/
+    font-size: 2vw; /*резиновый текст относительно размера окна*/
+}
